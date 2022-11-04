@@ -1,0 +1,36 @@
+<div class="row">
+  <div class="col">
+    <h1 class="titulo">Vivero El Otoño</h1>
+  </div>
+
+</div>
+<div class="row">
+  <div class="col"><img
+      src="https://www.skil.co.uk/media//contentmanager/items/stepbystep/p/r/pruning_conifers_950_3041888_1416.webp"
+      alt="trees"></div>
+</div>
+<div class="row">
+  <div class="col-7">
+    <table class="table table-striped">
+      <thead>
+        <tr class="table-dark">
+          <th scope="col">#</th>
+          <th scope="col">Nombre común</th>
+          <th scope="col">Tipo</th>
+          <th scope="col">Clima</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let plant of plants index as i">
+          <th scope="row">{{ i + 1 }}</th>
+          <td>
+            {{ plant.nombre_comun }}
+          </td>
+          <td>{{ plant.tipo }}</td>
+          <td>{{ plant.clima }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</div>
